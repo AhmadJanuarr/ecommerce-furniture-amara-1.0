@@ -1,0 +1,79 @@
+{
+  "hash": "f3d66cb7",
+  "configHash": "22f97c64",
+  "lockfileHash": "ae78c9ba",
+  "browserHash": "9fc1a955",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c0e0e75c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "393593fa",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "19e376b2",
+      "needsInterop": false
+    },
+    "@heroicons/react/24/outline": {
+      "src": "../../node_modules/@heroicons/react/24/outline/esm/index.js",
+      "file": "@heroicons_react_24_outline.js",
+      "fileHash": "6d41ebeb",
+      "needsInterop": false
+    },
+    "react-bootstrap/Container": {
+      "src": "../../node_modules/react-bootstrap/esm/Container.js",
+      "file": "react-bootstrap_Container.js",
+      "fileHash": "0c785ae9",
+      "needsInterop": false
+    },
+    "react-bootstrap/Nav": {
+      "src": "../../node_modules/react-bootstrap/esm/Nav.js",
+      "file": "react-bootstrap_Nav.js",
+      "fileHash": "4fc45134",
+      "needsInterop": false
+    },
+    "react-bootstrap/Navbar": {
+      "src": "../../node_modules/react-bootstrap/esm/Navbar.js",
+      "file": "react-bootstrap_Navbar.js",
+      "fileHash": "a78ca38f",
+      "needsInterop": false
+    },
+    "react-bootstrap": {
+      "src": "../../node_modules/react-bootstrap/esm/index.js",
+      "file": "react-bootstrap.js",
+      "fileHash": "05d5a4fa",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-QRSRDMJB": {
+      "file": "chunk-QRSRDMJB.js"
+    },
+    "chunk-MVMU6ZZG": {
+      "file": "chunk-MVMU6ZZG.js"
+    },
+    "chunk-ANTVV2ET": {
+      "file": "chunk-ANTVV2ET.js"
+    },
+    "chunk-ZPHS3THI": {
+      "file": "chunk-ZPHS3THI.js"
+    },
+    "chunk-VCEJUOTE": {
+      "file": "chunk-VCEJUOTE.js"
+    },
+    "chunk-OYP6L5KJ": {
+      "file": "chunk-OYP6L5KJ.js"
+    },
+    "chunk-ATZAHYIB": {
+      "file": "chunk-ATZAHYIB.js"
+    }
+  }
+}
