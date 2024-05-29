@@ -1,12 +1,38 @@
-// Include any default variable overrides here (though functions won't be available)
+// Import Bootstrap's functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-// Then add additional custom code here
+$font-size-base: 12px;
 
-.mt-6{
-    margin-top: ($spacer * 6) !important; 
+.mt-6 {
+  margin-top: ($spacer * 6) !important;
+}
+.mt-7 {
+  margin-top: ($spacer * 7) !important;
+}
+.mt-8 {
+  margin-top: ($spacer * 8) !important;
 }
 
+.arrow-down-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
 
-// $font-size-base affects the font size of the body text
-$h1-font-size: 5rem;
+div {
+  .circle::before {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 100%;
+  }
+  .circle:hover::before {
+    border: 2px solid black;
+  }
+}
