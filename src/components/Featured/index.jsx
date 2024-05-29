@@ -1,10 +1,23 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import furnitureItems from "../../constants/FurnitureData";
 
 function FeatureProduct() {
+  const [data, setData] = useState([]);
+
+  // Fungsi untuk menyimpan data ke Local Storage saat komponen dimuat
+  useEffect(() => {
+    const storedData = localStorage.getItem("furnitureData");
+    if (!storedData) {
+      localStorage.setItem("furnitureData", JSON.stringify(furnitureItems));
+      setData(furnitureItems);
+    } else {
+      setData(JSON.parse(storedData));
+    }
+  }, []);
+
   const rupiah = (number) => {
     return new Intl.NumberFormat("id-ID", {
       style: "currency",
@@ -13,9 +26,9 @@ function FeatureProduct() {
   };
 
   // Use useMemo to memoize the featured items so they don't change on re-render
-  const featuredItems = useMemo(() => {
-    return furnitureItems.slice(0, 9);
-  }, []);
+  // const featuredItems = useMemo(() => {
+  //   return furnitureItems.slice(0, 9);
+  // }, []);
 
   return (
     <>
@@ -26,7 +39,7 @@ function FeatureProduct() {
       </Row>
       <Row className="">
         <Col className="d-flex gap-5 justify-content-center flex-wrap mt-5">
-          {featuredItems.map((item) => (
+          {data.map((item) => (
             <Card style={{ width: "22rem" }} key={item.id} className="border-0">
               <LazyLoadImage
                 variant="top"

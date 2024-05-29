@@ -3,6 +3,8 @@ import BestSellers from "../components/Bestsellers/index.jsx";
 import NewArrivals from "../components/NewArrivals/index.jsx";
 import Footer from "../components/Footer/index.jsx";
 import FeatureProduct from "../components/Featured/index.jsx";
+import Testimonials from "../components/Testimonials/index.jsx";
+import { Container } from "react-bootstrap";
 function HomePage() {
   return (
     <div className="overflow-hidden">
@@ -13,6 +15,9 @@ function HomePage() {
       <BestSellers />
       <NewArrivals />
       <FeatureProduct />
+      <Container>
+        <Testimonials />
+      </Container>
       <Footer>© 2023 FurniMad. All rights reserved</Footer>
     </div>
   );

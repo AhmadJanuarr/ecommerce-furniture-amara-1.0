@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 
 function NewArrivals() {
   return (
@@ -7,7 +7,7 @@ function NewArrivals() {
       <Row>
         <Col lg={5}>
           <img
-            src="../../public/img/f24.jpg"
+            src="../../public/img/f13.jpg"
             className="rounded-3"
             width={"100%"}
             height={"800px"}
@@ -20,7 +20,10 @@ function NewArrivals() {
           <div className="ms-5">
             <h1 className="display-1">Luxurious Sofa Set</h1>
             <p className="fs-4">
-              Luxurious sofa set for a stylish living room.
+              Create a stylish living room atmosphere with this luxurious sofa
+              set. Designed for comfort and moments, this sofa set will become
+              the center of attention in your home, providing a touch of class
+              and unmatched luxury.
             </p>
             <Button variant="dark" size="md" className="mt-8">
               Check details
